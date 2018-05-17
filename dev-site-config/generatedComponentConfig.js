@@ -310,6 +310,8 @@ import ImageDefault from '../packages/terra-image/examples/test-examples/ImageDe
 import ImageFluid from '../packages/terra-image/examples/test-examples/ImageFluid.example';
 import ImageLoading from '../packages/terra-image/examples/test-examples/ImageLoading.example';
 import ImageNonFluid from '../packages/terra-image/examples/test-examples/ImageNonFluid.example';
+import MultiSelectSections from '../packages/terra-list/examples/test-examples/MultiSelectSections.example';
+import SingleSelectSections from '../packages/terra-list/examples/test-examples/SingleSelectSections.example';
 import ChevronListItem from '../packages/terra-list/tests/nightwatch/list-item/ChevronListItem';
 import DefaultListItem from '../packages/terra-list/tests/nightwatch/list-item/DefaultListItem';
 import SelectableListItem from '../packages/terra-list/tests/nightwatch/list-item/SelectableListItem';
@@ -1977,6 +1979,16 @@ const componentConfig = {
     name: 'List',
     path: '/list',
     tests: [
+      {
+        name: 'Multi Select Sections',
+        path: '/multi-select-sections',
+        component: MultiSelectSections,
+      },
+      {
+        name: 'Single Select Sections',
+        path: '/single-select-sections',
+        component: SingleSelectSections,
+      },
       {
         name: 'List Item',
         path: '/list-item',
